@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Home SOC Dashboard</title>
+  <meta name="description" content="SSH attack detection and threat intelligence dashboard built from Log Hunter and IOC Enricher output.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <p class="eyebrow">Home SOC</p>
+      <h1>SSH attack dashboard</h1>
+      <p class="lede" id="period"></p>
+      <ol class="pipeline" aria-label="How this data was produced">
+        <li><a href="https://github.com/Ezashi9/log-hunter">Log Hunter</a><span>finds attacks in SSH logs</span></li>
+        <li><a href="https://github.com/Ezashi9/ioc-enricher">IOC Enricher</a><span>checks attackers against threat intel</span></li>
+        <li><a href="https://github.com/Ezashi9/home-soc-dashboard">Dashboard</a><span>this page</span></li>
+      </ol>
+    </header>
+
+    <section class="hero card" aria-labelledby="hero-label">
+      <p class="hero-label" id="hero-label">Failed SSH logins</p>
+      <p class="hero-value" id="hero-value"></p>
+      <p class="hero-note" id="hero-note"></p>
+    </section>
+
+    <section class="tiles" id="tiles" aria-label="Key numbers"></section>
+
+    <section class="card">
+      <h2>Failed logins over time</h2>
+      <p class="sub">10-minute intervals. Hover a column for the exact count.</p>
+      <div class="chart chart-tall"><canvas id="chart-timeline" role="img"></canvas></div>
+    </section>
+
+    <div class="grid-2">
+      <section class="card">
+        <h2>Top attacking IPs</h2>
+        <p class="sub">Failed logins per source address</p>
+        <div class="chart"><canvas id="chart-ips" role="img"></canvas></div>
+      </section>
+      <section class="card">
+        <h2>Most-targeted usernames</h2>
+        <p class="sub">Accounts attackers tried to log in as</p>
+        <div class="chart"><canvas id="chart-users" role="img"></canvas></div>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2>Attackers and threat intelligence</h2>
+      <p class="sub" id="intel-sub"></p>
+      <div class="intel-note" id="intel-note" hidden></div>
+      <div class="table-wrap"><table id="table-attackers"></table></div>
+    </section>
+
+    <div class="grid-2">
+      <section class="card">
+        <h2>Failed logins by country</h2>
+        <p class="sub">Brute-force sources looked up in AbuseIPDB</p>
+        <div class="chart chart-short"><canvas id="chart-countries" role="img"></canvas></div>
+      </section>
+      <section class="card">
+        <h2>Alerts</h2>
+        <p class="sub">Raised by Log Hunter's detection rules</p>
+        <div class="table-wrap"><table id="table-alerts"></table></div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p id="footer-sources"></p>
+      <p>Built by Eisa Chaudry. This page only displays log analysis results; nothing here scans or contacts the listed addresses.</p>
+    </footer>
+  </main>
+
+  <script src="vendor/chart.umd.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

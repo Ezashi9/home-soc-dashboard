@@ -1,0 +1,114 @@
+[
+  {
+    "ip": "183.62.140.253",
+    "verdict": "no reports",
+    "abuse_score": 0,
+    "total_reports": 0,
+    "distinct_reporters": 0,
+    "last_reported": null,
+    "country": "CN",
+    "isp": "CHINANET Guangdong province network",
+    "usage_type": "Fixed Line ISP",
+    "is_tor": false,
+    "log_hunter_rules": [
+      "brute_force",
+      "username_spray"
+    ],
+    "failed_logins": 286,
+    "skipped_reason": null,
+    "from_cache": false
+  },
+  {
+    "ip": "187.141.143.180",
+    "verdict": "no reports",
+    "abuse_score": 0,
+    "total_reports": 0,
+    "distinct_reporters": 0,
+    "last_reported": "2022-05-05T11:40:21+00:00",
+    "country": "MX",
+    "isp": "Uninet S.A. de C.V.",
+    "usage_type": "Fixed Line ISP",
+    "is_tor": false,
+    "log_hunter_rules": [
+      "brute_force",
+      "username_spray"
+    ],
+    "failed_logins": 80,
+    "skipped_reason": null,
+    "from_cache": false
+  },
+  {
+    "ip": "103.99.0.122",
+    "verdict": "no reports",
+    "abuse_score": 0,
+    "total_reports": 0,
+    "distinct_reporters": 0,
+    "last_reported": "2025-09-06T00:01:57+00:00",
+    "country": "VN",
+    "isp": "VPSONLINE Ltd",
+    "usage_type": "Fixed Line ISP",
+    "is_tor": false,
+    "log_hunter_rules": [
+      "brute_force",
+      "username_spray"
+    ],
+    "failed_logins": 46,
+    "skipped_reason": null,
+    "from_cache": false
+  },
+  {
+    "ip": "112.95.230.3",
+    "verdict": "no reports",
+    "abuse_score": 0,
+    "total_reports": 0,
+    "distinct_reporters": 0,
+    "last_reported": null,
+    "country": "CN",
+    "isp": "China Unicom Guangdong province network",
+    "usage_type": "Fixed Line ISP",
+    "is_tor": false,
+    "log_hunter_rules": [
+      "brute_force"
+    ],
+    "failed_logins": 26,
+    "skipped_reason": null,
+    "from_cache": false
+  },
+  {
+    "ip": "5.188.10.180",
+    "verdict": "no reports",
+    "abuse_score": 0,
+    "total_reports": 0,
+    "distinct_reporters": 0,
+    "last_reported": null,
+    "country": "RU",
+    "isp": "LTD Magistral_Telecom",
+    "usage_type": "Fixed Line ISP",
+    "is_tor": false,
+    "log_hunter_rules": [
+      "brute_force",
+      "username_spray"
+    ],
+    "failed_logins": 20,
+    "skipped_reason": null,
+    "from_cache": false
+  },
+  {
+    "ip": "185.190.58.151",
+    "verdict": "no reports",
+    "abuse_score": 0,
+    "total_reports": 0,
+    "distinct_reporters": 0,
+    "last_reported": null,
+    "country": "SG",
+    "isp": "Onidel Pty Ltd",
+    "usage_type": "Data Center/Web Hosting/Transit",
+    "is_tor": false,
+    "log_hunter_rules": [
+      "brute_force"
+    ],
+    "failed_logins": 18,
+    "skipped_reason": null,
+    "from_cache": false
+  }
+]
