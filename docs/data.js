@@ -1,5 +1,5 @@
 window.HOME_SOC_DATA = {
- "generated_at": "2026-10-14T18:55:07+00:00",
+ "generated_at": "2026-10-15T16:46:20+00:00",
  "sources": {
   "dataset": "Loghub OpenSSH sample (historical lab-server logs)",
   "intel": "AbuseIPDB"
@@ -327,7 +327,9 @@ window.HOME_SOC_DATA = {
    "usernames": [
     "fztu"
    ],
-   "count": 0
+   "count": 0,
+   "attack_ids": [],
+   "attack_tactics": []
   },
   {
    "rule": "brute_force",
@@ -348,7 +350,13 @@ window.HOME_SOC_DATA = {
     "ubuntu",
     "zhangyan"
    ],
-   "count": 286
+   "count": 286,
+   "attack_ids": [
+    "T1110.001"
+   ],
+   "attack_tactics": [
+    "Credential Access"
+   ]
   },
   {
    "rule": "brute_force",
@@ -387,7 +395,13 @@ window.HOME_SOC_DATA = {
     "vnc",
     "www"
    ],
-   "count": 80
+   "count": 80,
+   "attack_ids": [
+    "T1110.001"
+   ],
+   "attack_tactics": [
+    "Credential Access"
+   ]
   },
   {
    "rule": "brute_force",
@@ -417,7 +431,13 @@ window.HOME_SOC_DATA = {
     "user",
     "uucp"
    ],
-   "count": 46
+   "count": 46,
+   "attack_ids": [
+    "T1110.001"
+   ],
+   "attack_tactics": [
+    "Credential Access"
+   ]
   },
   {
    "rule": "brute_force",
@@ -431,7 +451,13 @@ window.HOME_SOC_DATA = {
     "root",
     "utsims"
    ],
-   "count": 26
+   "count": 26,
+   "attack_ids": [
+    "T1110.001"
+   ],
+   "attack_tactics": [
+    "Credential Access"
+   ]
   },
   {
    "rule": "brute_force",
@@ -449,7 +475,13 @@ window.HOME_SOC_DATA = {
     "ftp",
     "guest"
    ],
-   "count": 20
+   "count": 20,
+   "attack_ids": [
+    "T1110.001"
+   ],
+   "attack_tactics": [
+    "Credential Access"
+   ]
   },
   {
    "rule": "brute_force",
@@ -464,7 +496,13 @@ window.HOME_SOC_DATA = {
     "admin",
     "api"
    ],
-   "count": 18
+   "count": 18,
+   "attack_ids": [
+    "T1110.001"
+   ],
+   "attack_tactics": [
+    "Credential Access"
+   ]
   },
   {
    "rule": "username_spray",
@@ -503,7 +541,13 @@ window.HOME_SOC_DATA = {
     "vnc",
     "www"
    ],
-   "count": 28
+   "count": 28,
+   "attack_ids": [
+    "T1110"
+   ],
+   "attack_tactics": [
+    "Credential Access"
+   ]
   },
   {
    "rule": "username_spray",
@@ -533,7 +577,13 @@ window.HOME_SOC_DATA = {
     "user",
     "uucp"
    ],
-   "count": 19
+   "count": 19,
+   "attack_ids": [
+    "T1110"
+   ],
+   "attack_tactics": [
+    "Credential Access"
+   ]
   },
   {
    "rule": "username_spray",
@@ -554,7 +604,13 @@ window.HOME_SOC_DATA = {
     "ubuntu",
     "zhangyan"
    ],
-   "count": 10
+   "count": 10,
+   "attack_ids": [
+    "T1110"
+   ],
+   "attack_tactics": [
+    "Credential Access"
+   ]
   },
   {
    "rule": "username_spray",
@@ -572,7 +628,13 @@ window.HOME_SOC_DATA = {
     "ftp",
     "guest"
    ],
-   "count": 7
+   "count": 7,
+   "attack_ids": [
+    "T1110"
+   ],
+   "attack_tactics": [
+    "Credential Access"
+   ]
   }
  ]
 };

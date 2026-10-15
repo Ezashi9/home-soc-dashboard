@@ -110,10 +110,11 @@
 
   const severityOrder = { high: 0, medium: 1, info: 2 };
   table("table-alerts",
-    [["Severity"], ["Rule"], ["IP address"], ["Detail"]],
+    [["Severity"], ["Rule"], ["ATT&CK"], ["IP address"], ["Detail"]],
     [...data.alerts]
       .sort((a, b) => severityOrder[a.severity] - severityOrder[b.severity] || b.count - a.count)
-      .map((a) => [statusCell(a.severity), td(a.rule.replace(/_/g, " ")), td(a.ip, "mono"), td(a.detail, "wrap")]));
+      .map((a) => [statusCell(a.severity), td(a.rule.replace(/_/g, " ")),
+        td((a.attack_ids || []).join(", ") || "–", "mono"), td(a.ip, "mono"), td(a.detail, "wrap")]));
 
   // ---------- charts ----------
 
