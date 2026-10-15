@@ -1,5 +1,7 @@
 # Home SOC Dashboard
 
+[![Tests](https://github.com/Ezashi9/home-soc-dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/Ezashi9/home-soc-dashboard/actions/workflows/ci.yml)
+
 **Live demo: https://ezashi9.github.io/home-soc-dashboard/** · **Live threat feed (updated daily): https://ezashi9.github.io/home-soc-dashboard/live.html**
 
 A web dashboard that shows SSH attacks found by [Log Hunter](https://github.com/Ezashi9/log-hunter), combined with threat intelligence from [IOC Enricher](https://github.com/Ezashi9/ioc-enricher). It's the third part of **Home SOC**, a small security operations centre I'm building piece by piece.
