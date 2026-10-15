@@ -22,11 +22,13 @@ def build_data(alerts_doc: dict, enriched_rows: list[dict], sources: dict) -> di
     for alert in alerts_doc["alerts"]:
         if alert["severity"] == "info":
             continue
-        a = attacker(alert["ip"])
-        if alert["rule"] not in a["rules"]:
-            a["rules"].append(alert["rule"])
-        if alert["rule"] == "brute_force":
-            a["failed_logins"] = max(a["failed_logins"], alert["count"])
+        # Distributed alerts name many attackers in "sources" instead of one "ip".
+        for ip in alert.get("sources") or [alert["ip"]]:
+            a = attacker(ip)
+            if alert["rule"] not in a["rules"]:
+                a["rules"].append(alert["rule"])
+            if alert["rule"] == "brute_force":
+                a["failed_logins"] = max(a["failed_logins"], alert["count"])
 
     for a in attackers.values():
         row = intel.get(a["ip"])
