@@ -125,3 +125,20 @@ td.wrap { white-space: normal; min-width: 180px; }
   .hero-value { font-size: 48px; }
   .card { padding: 16px; }
 }
+
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--grid); }
+.tabs a {
+  padding: 8px 12px; margin-bottom: -1px; color: var(--text-secondary); text-decoration: none;
+  font-size: 14px; font-weight: 600; border-bottom: 2px solid transparent;
+}
+.tabs a:hover { color: var(--text-primary); }
+.tabs a[aria-current="page"] { color: var(--text-primary); border-bottom-color: var(--series); }
+
+.compare { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px; margin-bottom: 12px; }
+.compare-item { padding: 14px 16px; border: 1px solid var(--border); border-radius: 8px; }
+.compare-source { margin: 0; color: var(--text-secondary); font-size: 13px; font-weight: 600; }
+.compare-value { margin: 2px 0 0; font-size: 30px; font-weight: 650; line-height: 1.15; }
+.compare-detail { margin: 2px 0 0; color: var(--text-secondary); font-size: 13px; }
+
+.stale { margin: 0; padding: 12px 14px; border-radius: 8px; border-left: 4px solid var(--status-serious); background: var(--note-bg); color: var(--text-secondary); }
+.stale strong { color: var(--text-primary); }

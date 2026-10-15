@@ -1,0 +1,61 @@
+name: Live threat feed
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # daily, 06:17 UTC (off the hour to avoid GitHub's busiest minute)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-feed
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out dashboard
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Check out IOC Enricher
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: Ezashi9/ioc-enricher
+          path: ioc-enricher
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -t .
+
+      - name: Fetch today's attackers
+        run: python live_feed.py fetch
+
+      - name: Enrich with AbuseIPDB
+        env:
+          ABUSEIPDB_API_KEY: ${{ secrets.ABUSEIPDB_API_KEY }}
+        run: |
+          cd ioc-enricher
+          python -m ioc_enricher ../live/ips.txt --out ../live
+
+      - name: Build page data
+        run: python live_feed.py build
+
+      - name: Publish if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/live-data.js
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+          else
+            git commit -m "Update live threat feed $(date -u +%F)"
+            git push
+          fi

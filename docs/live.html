@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Live Threat Feed</title>
+  <meta name="description" content="Today's internet attackers from SANS DShield and blocklist.de, checked against AbuseIPDB threat intelligence. Updated daily.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="tabs" aria-label="Dashboard pages">
+      <a href="./">Log analysis</a>
+      <a href="live.html" aria-current="page">Live threat feed</a>
+    </nav>
+    <header class="masthead">
+      <p class="eyebrow">Home SOC</p>
+      <h1>Live threat feed</h1>
+      <p class="lede" id="updated"></p>
+      <ol class="pipeline" aria-label="How this data was produced">
+        <li><span><strong>Daily, automatically</strong></span><span>GitHub Actions runs the pipeline</span></li>
+        <li><a href="https://isc.sans.edu">SANS DShield</a><span>+ blocklist.de attacker feeds</span></li>
+        <li><a href="https://github.com/Ezashi9/ioc-enricher">IOC Enricher</a><span>AbuseIPDB threat intel</span></li>
+      </ol>
+    </header>
+
+    <p class="stale" id="stale" hidden></p>
+
+    <section class="hero card" aria-labelledby="hero-label">
+      <p class="hero-label" id="hero-label">Most-attacked port on DShield sensors</p>
+      <p class="hero-value" id="hero-value"></p>
+      <p class="hero-note" id="hero-note"></p>
+    </section>
+
+    <section class="card">
+      <h2>Two feeds, two kinds of attacker</h2>
+      <p class="sub">The same threat-intel check run on both groups today</p>
+      <div class="compare" id="compare"></div>
+      <div class="intel-note" id="compare-note"></div>
+    </section>
+
+    <div class="grid-2">
+      <section class="card">
+        <h2>Most-attacked ports</h2>
+        <p class="sub">Attacks recorded across DShield sensors today</p>
+        <div class="chart"><canvas id="chart-ports" role="img"></canvas></div>
+      </section>
+      <section class="card">
+        <h2>Attackers by country</h2>
+        <p class="sub">Both groups combined, from AbuseIPDB</p>
+        <div class="chart"><canvas id="chart-countries" role="img"></canvas></div>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2>SSH password guessers</h2>
+      <p class="sub" id="ssh-sub"></p>
+      <div class="table-wrap"><table id="table-ssh"></table></div>
+    </section>
+
+    <section class="card">
+      <h2>Most active sources on DShield</h2>
+      <p class="sub">Ranked by attacks reported. "Sensors hit" separates hammering one target from scanning the whole internet.</p>
+      <div class="table-wrap"><table id="table-scanners"></table></div>
+    </section>
+
+    <footer class="footer">
+      <p>Data: <a href="https://isc.sans.edu">SANS Internet Storm Center / DShield</a> (CC BY-NC-SA 4.0), <a href="https://www.blocklist.de">blocklist.de</a>, threat intelligence from <a href="https://www.abuseipdb.com">AbuseIPDB</a>.</p>
+      <p>Built by Eisa Chaudry. This page only displays published threat data; nothing here scans or contacts the listed addresses.</p>
+    </footer>
+  </main>
+
+  <script src="vendor/chart.umd.min.js"></script>
+  <script src="live-data.js"></script>
+  <script src="live.js"></script>
+</body>
+</html>

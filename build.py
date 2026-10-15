@@ -76,12 +76,12 @@ def build_data(alerts_doc: dict, enriched_rows: list[dict], sources: dict) -> di
     }
 
 
-def to_js(data: dict) -> str:
+def to_js(data: dict, var: str = "HOME_SOC_DATA") -> str:
     # The data contains attacker-controlled strings (usernames from SSH logs). Escaping <, > and &
     # means no value can ever close a script tag or form HTML, even if this file is inlined later.
     payload = json.dumps(data, ensure_ascii=True, indent=1)
     payload = payload.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
-    return f"window.HOME_SOC_DATA = {payload};\n"
+    return f"window.{var} = {payload};\n"
 
 
 def main() -> None:

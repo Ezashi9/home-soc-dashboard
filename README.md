@@ -1,6 +1,6 @@
 # Home SOC Dashboard
 
-**Live demo: https://ezashi9.github.io/home-soc-dashboard/**
+**Live demo: https://ezashi9.github.io/home-soc-dashboard/** · **Live threat feed (updated daily): https://ezashi9.github.io/home-soc-dashboard/live.html**
 
 A web dashboard that shows SSH attacks found by [Log Hunter](https://github.com/Ezashi9/log-hunter), combined with threat intelligence from [IOC Enricher](https://github.com/Ezashi9/ioc-enricher). It's the third part of **Home SOC**, a small security operations centre I'm building piece by piece.
 
@@ -23,6 +23,38 @@ SSH server logs --> Log Hunter --> alerts.json --> IOC Enricher --> enriched.jso
 Every number is in a table as well as a chart, so nothing is only visible on hover. The page works in light and dark mode and on a phone.
 
 The sample data is the [Loghub OpenSSH dataset](https://github.com/logpai/loghub/tree/master/OpenSSH) (historical lab-server logs). Those attackers come back with no recent abuse reports, and the dashboard explains why: threat intelligence goes stale. See the IOC Enricher README for a run on live attackers, where 9 of 10 were flagged malicious.
+
+## Live threat feed: updated automatically every day
+
+**https://ezashi9.github.io/home-soc-dashboard/live.html**
+
+A second page shows *today's* attackers, refreshed every morning by a GitHub Actions workflow ([`.github/workflows/live-feed.yml`](.github/workflows/live-feed.yml)):
+
+1. Pull today's most active sources and most-attacked ports from the **SANS DShield** honeypot network, plus a random sample of 25 IPs reported to **blocklist.de** for SSH attacks in the last 48 hours.
+2. Check every IP with [IOC Enricher](https://github.com/Ezashi9/ioc-enricher) against AbuseIPDB.
+3. Rebuild the page data and publish it, but only if the tests pass and every feed returned data.
+
+### What it shows: different feeds see different attackers
+
+On the first run (15 Oct 2026), the same AbuseIPDB check gave completely different answers for the two groups:
+
+| Group | Flagged malicious |
+|---|---|
+| SSH password guessers (blocklist.de) | **24 of 25** |
+| Most active sources on DShield | **0 of 25** |
+
+DShield ranks sources by how often they hit its sensors. The busiest are mostly **scanners** sweeping the internet for open ports: many hit about 480 different sensors, and one research scanner hit 7,896. DShield's own records file at least one of them under a research-scanner feed. Ordinary server owners rarely notice scanning, so it seldom gets reported to AbuseIPDB, which is mostly fed by people reporting failed logins. That's the likely explanation, not a proven one, but the lesson stands either way: **no single threat feed sees everything**, which is why analysts cross-check several.
+
+### How the automation is secured
+
+| Practice | Why |
+|---|---|
+| API key stored as an encrypted **GitHub Actions secret** | It never appears in the code, the logs or the published page. |
+| Actions pinned to **full commit SHAs**, not version tags | A tag can be moved to point at malicious code (a supply-chain attack); a commit hash can't. A test fails if any action isn't pinned. |
+| Minimal permissions (`contents: write` only) and the second checkout without stored credentials | Limits what a compromised step could do. |
+| Third-party feed data validated (only valid public IPs and real port numbers) and escaped | Feeds are untrusted input, just like log data. |
+| Tests run before publishing; empty or failed feeds abort the run | A bad day upstream leaves yesterday's page in place instead of publishing garbage. |
+| Page shows a warning if data is over 48 hours old | Monitoring the monitor: a silently broken pipeline is obvious to visitors. |
 
 ## Security: the dashboard is built to resist its own data
 
@@ -57,13 +89,15 @@ cd docs && python -m http.server 8000      # then open http://localhost:8000
 Run the tests:
 
 ```bash
-python -m unittest discover -s tests -t .
+python -m unittest discover -s tests -t .   # 18 tests: dashboard, live feed, page security, workflow pinning
 ```
 
 ## Project layout
 
 ```
 build.py                 joins Log Hunter + IOC Enricher output into docs/data.js
+live_feed.py             fetches DShield + blocklist.de, builds docs/live-data.js
+.github/workflows/       daily live-feed job (GitHub Actions)
 docs/                    the website (served by GitHub Pages)
   index.html             page structure + Content Security Policy
   app.js                 renders tiles, tables and charts (textContent only)
