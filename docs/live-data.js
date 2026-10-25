@@ -1,66 +1,66 @@
 window.LIVE_FEED_DATA = {
- "fetched_at": "2026-10-24T10:58:09+00:00",
- "dshield_date": "2026-10-24",
+ "fetched_at": "2026-10-25T11:26:54+00:00",
+ "dshield_date": "2026-10-25",
  "ports": [
   {
    "port": 80,
    "name": "HTTP",
-   "attacks": 991161,
-   "sources": 5027
+   "attacks": 1499299,
+   "sources": 6611
   },
   {
    "port": 443,
    "name": "HTTPS",
-   "attacks": 730267,
-   "sources": 4024
+   "attacks": 1396411,
+   "sources": 6406
   },
   {
    "port": 23,
    "name": "Telnet",
-   "attacks": 440252,
-   "sources": 4854
+   "attacks": 767767,
+   "sources": 8507
   },
   {
    "port": 22,
    "name": "SSH",
-   "attacks": 130879,
-   "sources": 5337
-  },
-  {
-   "port": 8080,
-   "name": "HTTP (alt)",
-   "attacks": 121463,
-   "sources": 2860
-  },
-  {
-   "port": 8000,
-   "name": "HTTP (alt)",
-   "attacks": 89869,
-   "sources": 2773
+   "attacks": 285659,
+   "sources": 7642
   },
   {
    "port": 2222,
    "name": "SSH (alt)",
-   "attacks": 40978,
-   "sources": 3831
+   "attacks": 90828,
+   "sources": 4532
   },
   {
    "port": 6881,
    "name": "",
-   "attacks": 30154,
-   "sources": 840
+   "attacks": 73486,
+   "sources": 983
   },
   {
-   "port": 51413,
-   "name": "BitTorrent",
-   "attacks": 21862,
-   "sources": 979
+   "port": 8080,
+   "name": "HTTP (alt)",
+   "attacks": 66699,
+   "sources": 3867
   },
   {
-   "port": 137,
+   "port": 8000,
+   "name": "HTTP (alt)",
+   "attacks": 59709,
+   "sources": 3289
+  },
+  {
+   "port": 9000,
    "name": "",
-   "attacks": 19738,
-   "sources": 419
+   "attacks": 43729,
+   "sources": 2489
+  },
+  {
+   "port": 7547,
+   "name": "",
+   "attacks": 33768,
+   "sources": 2456
   }
  ],
  "scanners": [
@@ -392,257 +392,257 @@ window.LIVE_FEED_DATA = {
  ],
  "ssh": [
   {
-   "ip": "62.60.130.219",
+   "ip": "61.220.235.10",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 71283,
-   "last_reported": "2026-10-24T10:47:17+00:00",
-   "country": "LT",
-   "isp": "CIPHER OPERATIONS DOO BEOGRAD - NOVI BEOGRAD",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "80.94.92.55",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 68159,
-   "last_reported": "2026-10-24T10:56:51+00:00",
-   "country": "RO",
-   "isp": "TECHOFF SRV LIMITED",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "103.86.180.10",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 26929,
-   "last_reported": "2026-10-24T10:25:28+00:00",
-   "country": "IN",
-   "isp": "Paradise Telecom Pvt Ltd",
+   "total_reports": 28139,
+   "last_reported": "2026-10-25T11:12:45+00:00",
+   "country": "TW",
+   "isp": "Data Communication Business Group,",
    "usage_type": "Fixed Line ISP"
   },
   {
-   "ip": "131.100.242.102",
+   "ip": "211.254.212.59",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 16975,
-   "last_reported": "2026-10-24T10:10:26+00:00",
-   "country": "BR",
-   "isp": "INFOLINE BANDA LARGA",
-   "usage_type": "Fixed Line ISP"
-  },
-  {
-   "ip": "54.38.241.200",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 12029,
-   "last_reported": "2026-10-24T10:56:46+00:00",
-   "country": "FR",
-   "isp": "OVH SAS",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "180.76.243.197",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 7953,
-   "last_reported": "2026-10-24T10:29:28+00:00",
-   "country": "CN",
-   "isp": "Beijing Baidu Netcom Science and Technology Co., Ltd.",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "45.79.207.111",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 7552,
-   "last_reported": "2026-10-24T10:49:59+00:00",
-   "country": "US",
-   "isp": "Linode",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "43.157.200.91",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 6607,
-   "last_reported": "2026-10-24T10:20:59+00:00",
-   "country": "ID",
-   "isp": "Asia Pacific Network Information Center, Pty. Ltd.",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "101.96.195.17",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 4120,
-   "last_reported": "2026-10-24T10:23:17+00:00",
-   "country": "CN",
-   "isp": "Beijing Volcano Engine Technology Co., Ltd.",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "31.77.192.7",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 3628,
-   "last_reported": "2026-10-24T10:21:39+00:00",
-   "country": "DE",
-   "isp": "CHSL ONE LTD",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "146.190.175.10",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 2251,
-   "last_reported": "2026-10-24T10:45:43+00:00",
-   "country": "US",
-   "isp": "DigitalOcean, LLC",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "66.116.253.148",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 1709,
-   "last_reported": "2026-10-24T10:00:34+00:00",
-   "country": "IN",
-   "isp": "P.D.R Solutions FZC",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "103.48.84.200",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 1636,
-   "last_reported": "2026-10-24T10:48:53+00:00",
-   "country": "VN",
-   "isp": "Long Van System Solution JSC",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "87.236.176.65",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 1271,
-   "last_reported": "2026-10-24T05:28:11+00:00",
-   "country": "GB",
-   "isp": "Driftnet Ltd",
-   "usage_type": "Commercial"
-  },
-  {
-   "ip": "34.239.247.180",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 891,
-   "last_reported": "2026-10-24T09:28:03+00:00",
-   "country": "US",
-   "isp": "Amazon Technologies Inc.",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "43.163.251.147",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 711,
-   "last_reported": "2026-10-24T10:56:34+00:00",
-   "country": "JP",
-   "isp": "ACEVILLE PTE.LTD.",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "110.43.50.41",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 698,
-   "last_reported": "2026-10-24T03:17:41+00:00",
-   "country": "CN",
-   "isp": "Beijing Kingsoft Cloud Internet Technology Co., Ltd.",
-   "usage_type": "Fixed Line ISP"
-  },
-  {
-   "ip": "221.162.3.134",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 628,
-   "last_reported": "2026-10-24T10:57:42+00:00",
+   "total_reports": 24561,
+   "last_reported": "2026-10-25T10:23:00+00:00",
    "country": "KR",
    "isp": "Korea Telecom",
    "usage_type": "Fixed Line ISP"
   },
   {
-   "ip": "16.5.0.210",
+   "ip": "111.238.174.6",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 576,
-   "last_reported": "2026-10-24T07:06:59+00:00",
-   "country": "BR",
-   "isp": "EMBNEX. LLC",
-   "usage_type": "Data Center/Web Hosting/Transit"
+   "total_reports": 23836,
+   "last_reported": "2026-10-25T10:47:32+00:00",
+   "country": "JP",
+   "isp": "KDDI CORPORATION",
+   "usage_type": "Mobile ISP"
   },
   {
-   "ip": "91.151.88.235",
+   "ip": "181.188.176.242",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 312,
-   "last_reported": "2026-10-24T10:49:50+00:00",
-   "country": "TR",
-   "isp": "HOSTING DUNYAM BILGI ILETISIM TEKNOLOJILERI TICARET LIMITED SIRKETI",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "35.233.54.204",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 135,
-   "last_reported": "2026-10-24T09:17:06+00:00",
-   "country": "BE",
-   "isp": "Google LLC",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "95.143.206.203",
-   "verdict": "malicious",
-   "abuse_score": 87,
-   "total_reports": 187,
-   "last_reported": "2026-10-23T20:44:47+00:00",
-   "country": "SE",
-   "isp": "Internetport Sweden AB",
+   "total_reports": 18000,
+   "last_reported": "2026-10-25T11:17:53+00:00",
+   "country": "BO",
+   "isp": "Telef\u00f3nica Celular de Bolivia S.A.",
    "usage_type": "Fixed Line ISP"
   },
   {
-   "ip": "165.154.60.146",
-   "verdict": "suspicious",
-   "abuse_score": 53,
-   "total_reports": 11,
-   "last_reported": "2026-10-24T10:20:28+00:00",
-   "country": "HK",
-   "isp": "UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED",
+   "ip": "101.36.228.201",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 6328,
+   "last_reported": "2026-10-25T10:23:57+00:00",
+   "country": "CN",
+   "isp": "Beijing Zhonglianlixin Technology Co., Ltd.",
    "usage_type": "Data Center/Web Hosting/Transit"
   },
   {
-   "ip": "194.44.57.245",
-   "verdict": "suspicious",
-   "abuse_score": 51,
-   "total_reports": 25,
-   "last_reported": "2026-10-23T14:20:26+00:00",
-   "country": "UA",
-   "isp": "TzOV Biznes i Technologii",
-   "usage_type": "Fixed Line ISP"
+   "ip": "109.160.32.43",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 5380,
+   "last_reported": "2026-10-25T11:17:36+00:00",
+   "country": "DE",
+   "isp": "Global Communication Net Plc",
+   "usage_type": "Data Center/Web Hosting/Transit"
   },
   {
-   "ip": "162.216.150.15",
-   "verdict": "whitelisted",
-   "abuse_score": 0,
-   "total_reports": 5896,
-   "last_reported": "2026-10-24T10:47:03+00:00",
+   "ip": "43.228.157.57",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 5114,
+   "last_reported": "2026-10-25T11:14:48+00:00",
+   "country": "DE",
+   "isp": "Cyber-Security-SG",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "109.160.32.111",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 4733,
+   "last_reported": "2026-10-25T05:00:20+00:00",
+   "country": "DE",
+   "isp": "Global Communication Net Plc",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "66.132.195.37",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 4477,
+   "last_reported": "2026-10-25T08:06:01+00:00",
    "country": "US",
-   "isp": "Google LLC",
+   "isp": "Censys, Inc.",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "172.190.13.234",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 4181,
+   "last_reported": "2026-10-25T10:50:07+00:00",
+   "country": "US",
+   "isp": "Microsoft Limited",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "213.67.210.12",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 2708,
+   "last_reported": "2026-10-25T08:11:15+00:00",
+   "country": "SE",
+   "isp": "Telia Network services",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "77.239.124.80",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 2620,
+   "last_reported": "2026-10-25T11:00:17+00:00",
+   "country": "NL",
+   "isp": "ROCKET \u0026 MARINICA LTD",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "121.15.7.100",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 1336,
+   "last_reported": "2026-10-25T11:16:35+00:00",
+   "country": "CN",
+   "isp": "CHINANET Guangdong province network",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "129.121.78.222",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 1008,
+   "last_reported": "2026-10-25T11:12:18+00:00",
+   "country": "US",
+   "isp": "Oso Grande IP Services, LLC",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "64.89.160.220",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 840,
+   "last_reported": "2026-10-25T10:51:51+00:00",
+   "country": "DE",
+   "isp": "Blatant Technologies, LLC",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "93.152.221.36",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 781,
+   "last_reported": "2026-10-25T11:20:19+00:00",
+   "country": "DE",
+   "isp": "TechTies Inc.",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "98.168.245.33",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 134,
+   "last_reported": "2026-10-25T05:54:23+00:00",
+   "country": "US",
+   "isp": "Cox Communications",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "68.109.94.195",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 129,
+   "last_reported": "2026-10-25T01:00:07+00:00",
+   "country": "US",
+   "isp": "Cox Communications Inc.",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "190.211.166.45",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 116,
+   "last_reported": "2026-10-25T03:50:16+00:00",
+   "country": "CL",
+   "isp": "UFINET CHILE SPA",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "5.189.189.176",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 90,
+   "last_reported": "2026-10-25T11:01:20+00:00",
+   "country": "FR",
+   "isp": "Contabo GmbH",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "165.22.143.96",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 68,
+   "last_reported": "2026-10-24T08:12:33+00:00",
+   "country": "US",
+   "isp": "DigitalOcean, LLC",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "147.182.136.103",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 59,
+   "last_reported": "2026-10-24T20:28:13+00:00",
+   "country": "US",
+   "isp": "DigitalOcean, LLC",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "66.31.212.26",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 38,
+   "last_reported": "2026-10-25T10:50:08+00:00",
+   "country": "US",
+   "isp": "Comcast Cable Communications Holdings, Inc",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "117.41.161.60",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 33,
+   "last_reported": "2026-10-25T10:53:51+00:00",
+   "country": "CN",
+   "isp": "CHINANET Jiangxi province network",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "66.94.115.30",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 28,
+   "last_reported": "2026-10-25T11:14:59+00:00",
+   "country": "US",
+   "isp": "Contabo Inc.",
    "usage_type": "Data Center/Web Hosting/Transit"
   }
  ],
- "ssh_total": 4758,
+ "ssh_total": 4639,
  "stats": {
   "scanners": {
    "count": 25,
@@ -657,11 +657,9 @@ window.LIVE_FEED_DATA = {
   "ssh": {
    "count": 25,
    "checked": 25,
-   "malicious": 22,
+   "malicious": 25,
    "verdicts": {
-    "malicious": 22,
-    "suspicious": 2,
-    "whitelisted": 1
+    "malicious": 25
    },
    "median_score": 100
   }
@@ -673,38 +671,38 @@ window.LIVE_FEED_DATA = {
   ],
   [
    "US",
-   6
+   11
   ],
   [
    "NL",
-   5
+   6
+  ],
+  [
+   "DE",
+   6
   ],
   [
    "CN",
    4
   ],
   [
-   "DE",
-   2
-  ],
-  [
-   "GB",
-   2
-  ],
-  [
-   "IN",
-   2
-  ],
-  [
-   "BR",
-   2
-  ],
-  [
    "ES",
    1
   ],
   [
+   "GB",
+   1
+  ],
+  [
    "BG",
+   1
+  ],
+  [
+   "TW",
+   1
+  ],
+  [
+   "KR",
    1
   ]
  ],
@@ -712,8 +710,8 @@ window.LIVE_FEED_DATA = {
   "top_port": {
    "port": 80,
    "name": "HTTP",
-   "attacks": 991161,
-   "sources": 5027
+   "attacks": 1499299,
+   "sources": 6611
   },
   "loudest": {
    "ip": "13.94.254.200",
