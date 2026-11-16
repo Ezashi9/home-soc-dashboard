@@ -1,66 +1,66 @@
 window.LIVE_FEED_DATA = {
- "fetched_at": "2026-11-15T13:55:08+00:00",
- "dshield_date": "2026-11-15",
+ "fetched_at": "2026-11-16T15:43:48+00:00",
+ "dshield_date": "2026-11-16",
  "ports": [
   {
    "port": 23,
    "name": "Telnet",
-   "attacks": 987532,
-   "sources": 7201
+   "attacks": 1072809,
+   "sources": 7848
   },
   {
    "port": 22,
    "name": "SSH",
-   "attacks": 255693,
-   "sources": 7307
+   "attacks": 329999,
+   "sources": 8166
   },
   {
    "port": 443,
    "name": "HTTPS",
-   "attacks": 120092,
-   "sources": 7469
+   "attacks": 128248,
+   "sources": 7414
   },
   {
    "port": 16767,
    "name": "",
-   "attacks": 92507,
-   "sources": 3607
+   "attacks": 103229,
+   "sources": 3747
   },
   {
    "port": 80,
    "name": "HTTP",
-   "attacks": 88709,
-   "sources": 4442
-  },
-  {
-   "port": 51413,
-   "name": "BitTorrent",
-   "attacks": 74178,
-   "sources": 3401
+   "attacks": 100928,
+   "sources": 6799
   },
   {
    "port": 2222,
    "name": "SSH (alt)",
-   "attacks": 57471,
-   "sources": 4550
+   "attacks": 70869,
+   "sources": 5681
   },
   {
-   "port": 123,
-   "name": "NTP",
-   "attacks": 47811,
-   "sources": 2523
+   "port": 51413,
+   "name": "BitTorrent",
+   "attacks": 68668,
+   "sources": 3241
   },
   {
    "port": 8080,
    "name": "HTTP (alt)",
-   "attacks": 46346,
-   "sources": 3112
+   "attacks": 55979,
+   "sources": 3834
   },
   {
-   "port": 137,
+   "port": 123,
+   "name": "NTP",
+   "attacks": 51685,
+   "sources": 2118
+  },
+  {
+   "port": 7680,
    "name": "",
-   "attacks": 32144,
-   "sources": 399
+   "attacks": 48635,
+   "sources": 2662
   }
  ],
  "scanners": [
@@ -392,257 +392,257 @@ window.LIVE_FEED_DATA = {
  ],
  "ssh": [
   {
-   "ip": "5.182.83.231",
+   "ip": "92.118.39.71",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 41742,
-   "last_reported": "2026-11-15T13:10:58+00:00",
-   "country": "ES",
-   "isp": "AVATEL TELECOM, SA",
+   "total_reports": 86509,
+   "last_reported": "2026-11-16T15:43:56+00:00",
+   "country": "RO",
+   "isp": "DMZHOST",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "85.95.166.40",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 13012,
+   "last_reported": "2026-11-16T15:00:19+00:00",
+   "country": "RU",
+   "isp": "Branch in Mordovian Republic",
    "usage_type": "Fixed Line ISP"
   },
   {
-   "ip": "81.192.46.45",
+   "ip": "213.154.77.61",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 27695,
-   "last_reported": "2026-11-15T13:06:23+00:00",
-   "country": "MA",
-   "isp": "Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM",
+   "total_reports": 10238,
+   "last_reported": "2026-11-16T15:34:46+00:00",
+   "country": "SN",
+   "isp": "SONATEL Societe Nationale Des Telecommunications Du Senegal",
    "usage_type": "Fixed Line ISP"
   },
   {
-   "ip": "192.248.150.180",
+   "ip": "92.27.157.252",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 18574,
-   "last_reported": "2026-11-15T13:53:30+00:00",
+   "total_reports": 9885,
+   "last_reported": "2026-11-16T15:40:19+00:00",
    "country": "GB",
-   "isp": "The Constant Company, LLC.",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "104.244.79.113",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 10360,
-   "last_reported": "2026-11-15T13:52:24+00:00",
-   "country": "CH",
-   "isp": "BuyVM",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "187.50.226.182",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 6669,
-   "last_reported": "2026-11-15T12:55:06+00:00",
-   "country": "BR",
-   "isp": "TELEF\u00d4NICA BRASIL S.A",
+   "isp": "TalkTalk Communications Limited",
    "usage_type": "Fixed Line ISP"
   },
   {
-   "ip": "66.132.172.109",
+   "ip": "96.78.175.45",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 5442,
-   "last_reported": "2026-11-15T13:06:31+00:00",
+   "total_reports": 4336,
+   "last_reported": "2026-11-16T15:32:26+00:00",
    "country": "US",
-   "isp": "Censys, Inc.",
-   "usage_type": "Commercial"
+   "isp": "Comcast Cable Communications, LLC",
+   "usage_type": "Fixed Line ISP"
   },
   {
-   "ip": "203.189.221.17",
+   "ip": "196.189.116.182",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 5086,
-   "last_reported": "2026-11-15T10:10:36+00:00",
-   "country": "CN",
-   "isp": "CHINANET Guangdong province network",
+   "total_reports": 3163,
+   "last_reported": "2026-11-15T09:41:08+00:00",
+   "country": "ET",
+   "isp": "AA_CITY_GOV_MASSMEDIA",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "218.156.38.44",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 2466,
+   "last_reported": "2026-11-16T15:22:41+00:00",
+   "country": "KR",
+   "isp": "Korea Telecom",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "45.43.63.207",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 2428,
+   "last_reported": "2026-11-16T15:39:20+00:00",
+   "country": "SG",
+   "isp": "UCLOUD",
    "usage_type": "Data Center/Web Hosting/Transit"
   },
   {
-   "ip": "117.50.44.85",
+   "ip": "117.50.50.224",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 4383,
-   "last_reported": "2026-11-15T11:00:25+00:00",
+   "total_reports": 2352,
+   "last_reported": "2026-11-16T15:31:49+00:00",
    "country": "CN",
    "isp": "Shanghai UCloud Information Technology Company Limited",
    "usage_type": "Data Center/Web Hosting/Transit"
   },
   {
-   "ip": "85.11.167.154",
+   "ip": "92.118.39.64",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 3406,
-   "last_reported": "2026-11-15T12:23:09+00:00",
-   "country": "NL",
-   "isp": "TechTies Inc.",
+   "total_reports": 2133,
+   "last_reported": "2026-11-16T15:20:02+00:00",
+   "country": "RO",
+   "isp": "DMZHOST",
    "usage_type": "Data Center/Web Hosting/Transit"
   },
   {
-   "ip": "66.116.252.157",
+   "ip": "149.54.62.114",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 2445,
-   "last_reported": "2026-11-15T12:17:09+00:00",
-   "country": "IN",
-   "isp": "P.D.R Solutions FZC",
-   "usage_type": "Data Center/Web Hosting/Transit"
+   "total_reports": 2084,
+   "last_reported": "2026-11-16T12:21:19+00:00",
+   "country": "AF",
+   "isp": "Government Communications Network",
+   "usage_type": "Mobile ISP"
   },
   {
-   "ip": "93.152.221.43",
+   "ip": "27.71.60.22",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 1484,
-   "last_reported": "2026-11-15T13:25:04+00:00",
-   "country": "DE",
-   "isp": "TechTies Inc.",
-   "usage_type": "Data Center/Web Hosting/Transit"
+   "total_reports": 1880,
+   "last_reported": "2026-11-16T14:55:38+00:00",
+   "country": "VN",
+   "isp": "Viettel Group",
+   "usage_type": "Mobile ISP"
   },
   {
-   "ip": "58.242.117.176",
+   "ip": "36.133.53.52",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 1415,
-   "last_reported": "2026-11-15T09:42:31+00:00",
-   "country": "CN",
-   "isp": "China Unicom AnHui province network",
-   "usage_type": "Fixed Line ISP"
-  },
-  {
-   "ip": "50.6.192.84",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 1220,
-   "last_reported": "2026-11-15T13:51:37+00:00",
-   "country": "US",
-   "isp": "Newfold Digital, Inc.",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "49.124.149.50",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 754,
-   "last_reported": "2026-11-15T07:00:25+00:00",
-   "country": "MY",
-   "isp": "DiGi Telecommunications Sdn Bhd",
-   "usage_type": "Fixed Line ISP"
-  },
-  {
-   "ip": "179.61.154.216",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 407,
-   "last_reported": "2026-11-15T13:45:42+00:00",
-   "country": "BR",
-   "isp": "Hostzone Tecnologia LTDA",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "66.132.159.71",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 322,
-   "last_reported": "2026-11-15T13:06:31+00:00",
-   "country": "US",
-   "isp": "Censys, Inc.",
-   "usage_type": "Commercial"
-  },
-  {
-   "ip": "189.90.1.22",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 238,
-   "last_reported": "2026-11-15T13:41:03+00:00",
-   "country": "BR",
-   "isp": "CMA Consultoria Metodos Assessoria e Mercantil S/A",
-   "usage_type": "Commercial"
-  },
-  {
-   "ip": "117.157.91.113",
-   "verdict": "malicious",
-   "abuse_score": 100,
-   "total_reports": 202,
-   "last_reported": "2026-11-15T08:50:16+00:00",
+   "total_reports": 1442,
+   "last_reported": "2026-11-16T15:00:08+00:00",
    "country": "CN",
    "isp": "China Mobile Communications Corporation",
    "usage_type": "Fixed Line ISP"
   },
   {
-   "ip": "217.160.248.161",
+   "ip": "220.89.191.123",
    "verdict": "malicious",
    "abuse_score": 100,
-   "total_reports": 88,
-   "last_reported": "2026-11-15T13:40:44+00:00",
-   "country": "ES",
-   "isp": "IONOS SE",
-   "usage_type": "Data Center/Web Hosting/Transit"
+   "total_reports": 1240,
+   "last_reported": "2026-11-16T15:19:10+00:00",
+   "country": "KR",
+   "isp": "(ju)itekeunolroji",
+   "usage_type": "Fixed Line ISP"
   },
   {
-   "ip": "212.241.25.232",
+   "ip": "112.28.234.158",
    "verdict": "malicious",
-   "abuse_score": 91,
-   "total_reports": 30,
-   "last_reported": "2026-11-15T04:15:07+00:00",
-   "country": "KG",
-   "isp": "OJSC Kyrgyztelecom",
+   "abuse_score": 100,
+   "total_reports": 607,
+   "last_reported": "2026-11-16T14:00:06+00:00",
+   "country": "CN",
+   "isp": "China Mobile Communications Corporation",
    "usage_type": "Fixed Line ISP"
   },
   {
-   "ip": "172.104.11.186",
-   "verdict": "suspicious",
-   "abuse_score": 51,
-   "total_reports": 32,
-   "last_reported": "2026-11-14T22:50:09+00:00",
+   "ip": "38.106.158.9",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 450,
+   "last_reported": "2026-11-16T14:26:39+00:00",
    "country": "US",
-   "isp": "Linode",
-   "usage_type": "Data Center/Web Hosting/Transit"
-  },
-  {
-   "ip": "217.19.215.28",
-   "verdict": "suspicious",
-   "abuse_score": 44,
-   "total_reports": 27,
-   "last_reported": "2026-11-14T14:20:22+00:00",
-   "country": "MD",
-   "isp": "Societatea mixta pe actiuni de tip inchis Interdnestrcom",
+   "isp": "HiPoint Technology Services, Inc",
    "usage_type": "Fixed Line ISP"
   },
   {
-   "ip": "45.135.142.175",
-   "verdict": "suspicious",
-   "abuse_score": 42,
-   "total_reports": 52,
-   "last_reported": "2026-11-15T02:23:50+00:00",
-   "country": "GB",
-   "isp": "OFFICE LIMITED",
-   "usage_type": "Commercial"
+   "ip": "164.70.209.187",
+   "verdict": "malicious",
+   "abuse_score": 100,
+   "total_reports": 162,
+   "last_reported": "2026-11-16T15:43:06+00:00",
+   "country": "JP",
+   "isp": "So-net Service",
+   "usage_type": "Fixed Line ISP"
   },
   {
-   "ip": "108.186.84.157",
-   "verdict": "suspicious",
-   "abuse_score": 41,
-   "total_reports": 6,
-   "last_reported": "2026-11-14T01:35:32+00:00",
-   "country": "US",
-   "isp": "Internet Utilities NA LLC",
+   "ip": "173.249.45.8",
+   "verdict": "malicious",
+   "abuse_score": 85,
+   "total_reports": 31,
+   "last_reported": "2026-11-15T15:30:17+00:00",
+   "country": "FR",
+   "isp": "Contabo GmbH",
    "usage_type": "Data Center/Web Hosting/Transit"
   },
   {
-   "ip": "49.0.90.86",
+   "ip": "94.68.57.31",
+   "verdict": "suspicious",
+   "abuse_score": 73,
+   "total_reports": 12,
+   "last_reported": "2026-11-16T12:28:52+00:00",
+   "country": "GR",
+   "isp": "Ote SA (Hellenic Telecommunications Organisation)",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "130.12.46.107",
+   "verdict": "suspicious",
+   "abuse_score": 50,
+   "total_reports": 7,
+   "last_reported": "2026-11-16T10:51:57+00:00",
+   "country": "DE",
+   "isp": "ZhouyiSat Communications",
+   "usage_type": "Data Center/Web Hosting/Transit"
+  },
+  {
+   "ip": "203.147.89.158",
+   "verdict": "suspicious",
+   "abuse_score": 30,
+   "total_reports": 512,
+   "last_reported": "2026-11-14T16:50:27+00:00",
+   "country": "IN",
+   "isp": "MEGHBELA BROADBAND",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "121.151.238.222",
+   "verdict": "suspicious",
+   "abuse_score": 29,
+   "total_reports": 17,
+   "last_reported": "2026-11-15T12:50:25+00:00",
+   "country": "KR",
+   "isp": "Korea Telecom",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "220.72.226.80",
    "verdict": "low",
-   "abuse_score": 21,
-   "total_reports": 3,
-   "last_reported": "2026-11-14T05:50:27+00:00",
-   "country": "TH",
-   "isp": "AIS Fibre",
+   "abuse_score": 24,
+   "total_reports": 7,
+   "last_reported": "2026-11-15T13:50:25+00:00",
+   "country": "KR",
+   "isp": "Korea Telecom",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "188.243.149.65",
+   "verdict": "low",
+   "abuse_score": 24,
+   "total_reports": 4,
+   "last_reported": "2026-11-15T21:50:11+00:00",
+   "country": "RU",
+   "isp": "SkyNet Ltd.",
+   "usage_type": "Fixed Line ISP"
+  },
+  {
+   "ip": "45.184.100.137",
+   "verdict": "low",
+   "abuse_score": 23,
+   "total_reports": 5,
+   "last_reported": "2026-11-15T02:20:36+00:00",
+   "country": "SV",
+   "isp": "SERVICABLE S.A. DE C.V.",
    "usage_type": "Fixed Line ISP"
   }
  ],
- "ssh_total": 4721,
+ "ssh_total": 4229,
  "stats": {
   "scanners": {
    "count": 25,
@@ -657,11 +657,11 @@ window.LIVE_FEED_DATA = {
   "ssh": {
    "count": 25,
    "checked": 25,
-   "malicious": 20,
+   "malicious": 18,
    "verdicts": {
-    "malicious": 20,
+    "malicious": 18,
     "suspicious": 4,
-    "low": 1
+    "low": 3
    },
    "median_score": 100
   }
@@ -669,42 +669,42 @@ window.LIVE_FEED_DATA = {
  "countries": [
   [
    "RU",
-   13
-  ],
-  [
-   "US",
-   7
+   15
   ],
   [
    "NL",
-   6
-  ],
-  [
-   "CN",
    5
   ],
   [
-   "ES",
-   3
+   "US",
+   4
   ],
   [
-   "GB",
-   3
+   "CN",
+   4
   ],
   [
-   "BR",
-   3
+   "KR",
+   4
   ],
   [
    "DE",
    2
   ],
   [
-   "BG",
+   "GB",
+   2
+  ],
+  [
+   "RO",
+   2
+  ],
+  [
+   "ES",
    1
   ],
   [
-   "MA",
+   "BG",
    1
   ]
  ],
@@ -712,8 +712,8 @@ window.LIVE_FEED_DATA = {
   "top_port": {
    "port": 23,
    "name": "Telnet",
-   "attacks": 987532,
-   "sources": 7201
+   "attacks": 1072809,
+   "sources": 7848
   },
   "loudest": {
    "ip": "13.94.254.200",
